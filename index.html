@@ -2,28 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login Page</title>
-
+  <title>Page 1</title> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <title>Full Screen Image</title>
   <style>
-    * {
-       html, body {
-            margin: 0;
-            height: 100%;
-            width: 100%;
-        }
-        .bg {
-            background-image: url('your-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 500vh;
-            width: 500vw;
-        }
-      margin: 50;
-      padding: 50;
-      box-sizing: 5;
-    }
     body {
       font-family: Arial, sans-serif;
       background-color: #d3d3d3;
@@ -31,176 +12,119 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
 
     .container {
-      display: flex ;
+      display: flex;
       width: 100%;
       height: 100%;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      border-radius: 1.px;
+      border-radius: 10px;
       overflow: hidden;
     }
 
-   
+    .left, .right {
+      width: 50%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .left {
-      background-color:white;
-      width: 50%;
-    }
-    .right {
-     background-color:olivedrab; 
-           width: 50%;
-
+      background-color: white;
     }
 
     .right {
       background: linear-gradient(to bottom right, #1abc9c, #16a085);
       color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .left {
-      background: linear-gradient(to bottom right,white);
-      color: black;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
- .left h2 {
-      font-size:50px;
-      margin-bottom: 10px;
-    }
-      .left p {
       text-align: center;
-      margin-bottom: 0px;
-      line-height: .1;
-      max-width: 00px;
     }
 
     input[type="text"], input[type="password"] {
-      width: 70%;
-      padding: 20px;
-      margin-bottom: 25px;
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 15px;
       border: 1px solid #ccc;
       border-radius: 6px;
-      font-size: 16px;
     }
 
     button {
-      width: 78%;
-      padding: 25px;
+      width: 85%;
+      padding: 12px;
       background-color: #0e9b6e;
       color: white;
-      font-size: 20px;
-      border: 3px;
+      font-size: 16px;
+      border: none;
       border-radius: 6px;
       cursor: pointer;
-      margin-bottom: 15px;
-    }
-
-    .social-text {
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 30gpx;
-      color: #110505;
     }
 
     .social-icons {
+      margin-top: 15px;
       display: flex;
-      justify-content: center;
-      gap: 15px;
+      gap: 10px;
     }
 
     .social-icons i {
-      font-size: 15px;
+      font-size: 18px;
       color: white;
-      background-color: #555555;
+      background-color: #555;
       padding: 10px;
-       margin-bottom: 10px;
       border-radius: 50%;
-      transition: 0.3s;
     }
-
-    .social-icons i:hover {
-      capacity: 0.8;
-    }
-
-    .right h2 {
-      font-size: 25px;
-      margin-bottom: 10px;
-    }
-
-    .right p {
-      text-align: center;
-      margin-bottom: 5px;
-      line-height: 1.5;
-      max-width: 500px;
-      
-    }
-    
 
     .signup-btn {
+      margin-top: 20px;
       background-color: rgba(255, 255, 255, 0.2);
-      padding:20px 40px;
-      border-radius: 9999px;
+      padding: 10px 20px;
+      border-radius: 999px;
       color: white;
       text-decoration: none;
       font-size: 14px;
-      transition: background 0.3s;
     }
-    
-    .welcome back!-btn {
-      background-color: rgba(255, 255, 255, 0.2);
-      padding: px;
-      border-radius: px;
-      color: white;
-      text-decoration: none;
-      font-size: 50px;
-      transition: background 0.3s;
-    }
- .signup-btn:hover {
+
+    .signup-btn:hover {
       background-color: rgba(255, 255, 255, 0.3);
     }
 
-
+    .go-link {
+      margin-top: 20px;
+      color: white;
+      background-color: #0e9b6e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-
   <div class="container">
-
-    <!-- Left: Signin form -->
+    <!-- Left: Sign in form -->
     <div class="left">
-       <div class="fullscreen"></div>
-      <h2>Signin</h2>
-      <input type="text" placeholder="" style="background-color: lightgrey;">
-      <input type="password" placeholder="" type="text" style="background-color: lightgrey;">
-<button>Signin</button>
-      <div class="social-text">or signin with</div>
+      <h2>Sign In</h2> 
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button onclick="location.href='index2.html'"> Sign in</button>
+      <div class="social-text">or sign in with</div>
       <div class="social-icons">
         <i class="fab fa-facebook-f" style="background-color: #3b5998;"></i>
-        <i class="fab fa-google-plus-g" style="background-color: #dd4b39;"></i>
-        <i class="fab fa-linkedin-in" style="background-color: #0077b5;"></i>
-        
+        <i class="fab fa-google-plus-g"style="background-color: #dd4b39;"></i>
+        <i class="fab fa-linkedin-in"style="background-color: #0077b5;"></i>
       </div>
     </div>
 
-    <!-- Right: Welcome panel -->
+    <!-- Right: Welcome -->
     <div class="right">
-       <div class="fullscreen"></div>
       <h2>Welcome back!</h2>
-      <p style="font-size: 23px;">
-    Welcome back! We are so happy to have you here. It’s great to see you again. We hope you had a safe and enjoyable time away.
-      </p>
-
-<a href="#" class="signup-btn">No account yet? Signup.</a>
+      <p>We’re so happy to have you here. We hope you had a safe and enjoyable time away.</p>
+      <a href="#" class="signup-btn">No account yet? Signup.</a>
+      
       
     </div>
   </div>
-
 </body>
 </html>
