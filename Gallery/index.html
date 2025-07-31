@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Image Gallery</title>
+        <style>
+         body{
+            font-family: Arial,sans-serif;
+            background-color: rgb(255, 255, 255);
+            margin:0;
+            padding:20px;
+            text-align: center;
+         }
+         h1{
+            color:black;
+         }
+
+         .gallery{
+            display:flex ;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap:15px;
+        margin-top: 30px;
+     }  
+.gallery img {
+       width:250px;
+       height: 180px;
+       object-fit: cover;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px black;
+       transition: transform 0.3s ease;
+     }
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+</style>
+    </head>
+<body>
+
+    <h1>My Image Gallery</h1>
+<div class="gallery">
+    <img src="new jpg.jpeg" alt="new Image">
+     <img src="background1.jpg" alt="background1 Image">
+<img src="itachi.jpg" alt="Itachi Image">
+<img src="background.jpg" alt="Background Image">
+</body>
+</html>
+
+
+
